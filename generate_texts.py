@@ -100,7 +100,7 @@ def main():
     parser.add_argument('--topp', default=0, type=float, required=False, help='生成的时候积累概率最高多少')
     parser.add_argument('--model_config', default='config/model_config_small.json', type=str, required=False,
                         help='模型参数路径')
-    parser.add_argument('--tokenizer_path', default='cache/vocab_small.txt', type=str, required=False, help='词表路径')
+    parser.add_argument('--tokenizer_path', default='cache/vocab_seg_all.txt', type=str, required=False, help='词表路径')
     parser.add_argument('--model_path', default='model/final_model', type=str, required=False, help='模型路径')
     parser.add_argument('--save_path', default='generated/', type=str, required=False, help='存放生成的文件的路径')
     parser.add_argument('--articles_per_title', default=5, type=int, required=False, help='每个标题生成多少篇文章')
